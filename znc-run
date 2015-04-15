@@ -1,0 +1,3 @@
+#!/bin/sh
+zncdir=$(cd "${0%/*}"; pwd)
+docker run -d -p 49667:6667 -v $zncdir:/znc-data jimeh/znc
